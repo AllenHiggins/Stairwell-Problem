@@ -7,8 +7,8 @@ The program will take the input by exposing a HTTP end point.
 The program will respond with JSON response.
 The content of the response will be the output as per the problem definition.
 
-#Climbing Stairs
-####Problem
+# Climbing Stairs
+#### Problem
 A stairwell has a number of flights of stairs separated by landings.
 Each flight is a straight line of steps that you can climb without stopping. You can
 stride more than one step at a time when climbing each flight.
@@ -23,7 +23,7 @@ stride between 1 and 4 steps inclusive.
 
 The solution will calculate the minimum number of strides necessary to get to the top of the stairwell.
 
-####Examples:
+#### Examples:
 Input: {17}, StepsPerStride: 3, Returns: 6
 
 A stairwell with a single flight of with 17 steps. In 5 strides, you've climbed 15 steps. You’ve two steps left to
@@ -37,10 +37,10 @@ more strides to get to the top.
 Input: {4,9,8,11,7,20,14}, StepsPerStride: 2, Returns: 50
 
 
-#API Endpoint
+# API Endpoint
 /api/stairwell/{flights}/{stride}
 
-####API Examples:
+#### API Examples:
 http://localhost:8080/api/stairwell/17,17/3
 
 Status 200 OK
