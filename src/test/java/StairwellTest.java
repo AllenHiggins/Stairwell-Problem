@@ -42,11 +42,11 @@ class StairwellTest {
     @Test
     void totalStrides3() {
 
-        stairs = new int[]{17};
+        stairs = new int[]{1};
 
         Stairwell stairwell = new Stairwell(stairs, 3);
 
-        assertEquals(6, stairwell.totalStrides());
+        assertEquals(1, stairwell.totalStrides());
     }
 
     @Test
@@ -57,6 +57,46 @@ class StairwellTest {
         Stairwell stairwell = new Stairwell(stairs, 1);
 
         assertEquals(20, stairwell.totalStrides());
+    }
+
+    @Test
+    void totalStrides5() {
+
+        stairs = new int[]{17, 3};
+
+        Stairwell stairwell = new Stairwell(stairs, 3);
+
+        assertEquals(9, stairwell.totalStrides());
+    }
+
+    @Test
+    void totalStrides6() {
+
+        stairs = new int[]{3};
+
+        Stairwell stairwell = new Stairwell(stairs, 3);
+
+        assertEquals(1, stairwell.totalStrides());
+    }
+
+    @Test
+    void totalStrides7() {
+
+        stairs = new int[]{2};
+
+        Stairwell stairwell = new Stairwell(stairs, 3);
+
+        assertEquals(1, stairwell.totalStrides());
+    }
+
+    @Test
+    void totalStrides8() {
+
+        stairs = new int[]{2,3,1};
+
+        Stairwell stairwell = new Stairwell(stairs, 3);
+
+        assertEquals(7, stairwell.totalStrides());
     }
 
     @Test
