@@ -57,8 +57,12 @@ public class Stairwell {
 
         /*
         * Get the number of landings at a cost of 2 each
+        * (arrays od length 1 have no landing. we do not count last landing at top of stairwell hence -1)
         * Computation is faster than iteration
         * take the length of the array -1 and multiply the result by the landing cost (2)
+        * e.g: length = 1 => 1-1 = 0 * 2 = 0
+        *      length = 2 => 2-1 = 1 *2 = 2
+        *      ...
         * */
         int landingsStepTotal = (stairWell.length - 1) * 2;
 
@@ -124,7 +128,7 @@ public class Stairwell {
         int remaindingStrides, evenlyDividedStrides;
 
         /*
-        * Set a minimum stride value ( and any extra stride count - remainder ofter the modulo )
+        * Set a minimum stride value ( and any extra stride count - remainder after the modulo )
         * */
         final int MINIMUM_STRIDE = 1, EXTRA_STRIDE_COUNT = 1;
 
